@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    
+
+    <div class="container">
+        <h1>Python</h1>
+        <br>
+        <h3>stats(Dictionary)</h3>
+
+        
+        <p>stats = {}</p>
+        <p>for item in (listaNeve):</p>
+             <span style="padding-left: 20px;">if item.helyszin in stats.keys():</span>
+                <p style="padding-left: 40px;">stats[item.helyszin] += 1</p>
+            <span style="padding-left: 20px;">else:</span>
+                <p style="padding-left: 40px;">stats[item.helyszin] = 1</p>
+            
+        
+        <p>for key,value in stats.items():</p>
+        <span style="padding-left: 20px;">print(f"{key},{value})</span>
+<br>
+  
+    </div>
+
+    <br>
+
+    <div class="container">
+        <h3>3. Feladat: Class</h3>
+        <p>splittedData = row.split(";")
+            <ul>
+                <li>
+                    self.teszt = splittedData[0]
+                </li>
+                <li>
+                    self.teszt = splittedData[1]
+                </li>
+                <li>
+                    self.teszt = splittedData[2]
+                </li>
+                <li>
+                    self.teszt = splittedData[3]
+                </li>
+                <li>
+                    self.teszt = splittedData[4]
+                </li>
+                <li>
+                    self.teszt = splittedData[5]
+                </li>
+            </ul>
+        </p>
+    </div>
+
+
+    <div class="container">
+        <h3>Maximum kiválasztás</h3>
+        legtobb = listaNeve[0]
+        <br>
+        <span>For item in listaNeve:</span>
+        <br>
+        <span style="padding-left: 20px;">if item.darab > legtobb.darab:</span>
+        <p style="padding-left: 40px;">legtobb = item</p>
+        <p>print(f"{legtobb.nev},{legtobb.ido},{legtobb.darab}")</p>
+    </div>
+
+
+
+    <div class="container">
+        <h3>Új txt létrehozása</h3>
+        <span>file = open("new.txt","w",encoding="utf-8")</span>
+        <br>
+        <span>file.write(f'Kezdes;Nev;AdasDb')</span>
+        <br> 
+        <span style="padding-left: 20px;">for item in listaNeve:</span>
+        <br>
+        <span style="padding-left: 40px;">file.write(f"{item.nev},{item.ido},{item.darab}")</span>
+        <p>file.close()</p>
+
+    </div>
+
+    <div class="container">
+        <h3>Benne van-e az adatok között?</h3>
+        <span>van = False</span>
+        <br>
+        <span>for item in listaNeve:</span>
+        <br>
+        <span style="padding-left: 20px;">if item.orszag == "Olaszország":</span>
+        <br>
+        <span style="padding-left: 40px;">van = True</span>
+        <br>
+        <span>if van == False:</span>
+        <br>
+        <span style="padding-left: 20px;">print("van ilyen elem a listában")</span>
+        <br>
+        <span>else:</span>
+        <br>
+        <span style="padding-left: 20px;">print("nincs ilyen a listában")</span>
+    </div>
+
+    <br>
+    <div class="container">
+        <h3>Hány darab elem van a listában, amiben szerepel az "x" szó</h3>
+        <p>db = 0</p>
+        <span>for item in listaNeve:</span>
+        <br>
+        <span style="padding-left: 20px;">if "x" in item.nev:</span>
+        <br>
+        <span style="padding-left: 40px;">db += 1</span>
+        <p>print(db)</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
